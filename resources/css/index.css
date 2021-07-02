@@ -1,70 +1,100 @@
 * {
-    font-family: Tahoma,Helvetica, Arial, sans-serif;
-  }
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
 
-  h1 {
-    font-size: 60px;
-  } 
+h1 {
+  font-size: 60px;
+}
 
-  h1 {
-    color: #2F995B;
-  }
-  
-  h4 {
-    color: #99453F;
-  }
-   p {
-    color: #E67D75;
-  }
+h1 {
+  color: #2f995b;
+}
 
-  h4, h5, h6 {
-    margin: 4px;
-  }
-  
-  h6 {
-    color: grey;
-  }
+h4 {
+  color: #99453f;
+}
+p {
+  color: #e67d75;
+}
 
-  header p {
-    font-size: larger;
-    color: black;
-  }
+h4,
+h5,
+h6 {
+  margin: 4px;
+}
 
-  footer p {
-    margin-right: 30px;
-    margin-left: 20px;
-  }
+h6 {
+  color: grey;
+}
 
-  p, 
-  li {
-    font-size: 18px;
-  }
-   
-  a {
-    text-decoration: none;
-  }
+header p {
+  font-size: larger;
+  color: black;
+}
 
-  .flex-container {
-    display: flex;
-    margin: 10px;
-  }
+footer p {
+  margin-right: 30px;
+  margin-left: 20px;
+}
 
-  .vertical {
-    flex-direction: column;
-  }
+p,
+li {
+  font-size: 18px;
+}
 
-  main{
-    margin: 20px;
-  }
+a {
+  text-decoration: none;
+}
 
-  img {
-    width: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
+.flex-container {
+  display: flex;
+  margin: 10px;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+main {
+  margin: 20px;
+}
+
+img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+body {
+  background-color: #e6e4df;
+}
+
+.moustache {
+  position: relative;
+  left: -195px;
+  top: -53px;
+  width: 100px;
+  animation-name: addMoustache, wiggleMoustache;
+  animation-duration: 4s;
+  animation-delay: 0s, 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1, infinite;
+}
+
+@keyframes addMoustache {
+  from {
+    left: -500px;
   }
-  
-  body {
-    background-color: #E6E4DF;
+  to {
+    left: -170px;
   }
-  
-  
+}
+
+@keyframes wiggleMoustache {
+  50% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
